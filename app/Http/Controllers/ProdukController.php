@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\AdminDetail;
+use App\Models\Produk;
 use Illuminate\Http\Request;
 
-class AdminDetailController extends Controller
+class ProdukController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class AdminDetailController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\AdminDetail  $adminDetail
+     * @param  \App\Models\Produk  $produk
      * @return \Illuminate\Http\Response
      */
-    public function show(AdminDetail $adminDetail)
+    public function show(Produk $produk)
     {
         //
     }
@@ -52,10 +52,10 @@ class AdminDetailController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\AdminDetail  $adminDetail
+     * @param  \App\Models\Produk  $produk
      * @return \Illuminate\Http\Response
      */
-    public function edit(AdminDetail $adminDetail)
+    public function edit(Produk $produk)
     {
         //
     }
@@ -64,10 +64,10 @@ class AdminDetailController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\AdminDetail  $adminDetail
+     * @param  \App\Models\Produk  $produk
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, AdminDetail $adminDetail)
+    public function update(Request $request, Produk $produk)
     {
         //
     }
@@ -75,10 +75,10 @@ class AdminDetailController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\AdminDetail  $adminDetail
+     * @param  \App\Models\Produk  $produk
      * @return \Illuminate\Http\Response
      */
-    public function destroy(AdminDetail $adminDetail)
+    public function destroy(Produk $produk)
     {
         //
     }

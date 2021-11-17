@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAdminDetailsTable extends Migration
+class CreateOrdersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,8 @@ class CreateAdminDetailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('admin_details', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('gender');
-            $table->Integer('no');
-            $table->string('alamat');
-            $table->foreign('nama')->references('id')
-            ->on('admins')->onUpdate('cascade')
-            ->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -32,6 +26,6 @@ class CreateAdminDetailsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admin_details');
+        Schema::dropIfExists('orders');
     }
 }
